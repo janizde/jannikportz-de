@@ -1,0 +1,30 @@
+@import "variables";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "fonts";
+@import "mixins";
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+header, footer {
+  flex: 0;
+}
+
+main {
+  @extend .container;
+
+  flex: 1;
+}

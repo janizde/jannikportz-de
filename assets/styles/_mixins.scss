@@ -1,0 +1,9 @@
+@mixin with-centered-cols() {
+  display: flex;
+  flex-direction: column;
+
+  > .row {
+    flex: 1 0 auto;
+    align-items: center;
+  }
+}
