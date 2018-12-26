@@ -1,4 +1,4 @@
-$font-family-sans-serif: "SF Mono", "Open Sans", Arial, Helvetica, sans-serif;
+$font-family-sans-serif: Menlo, Hack, "SF Mono", monospace;
 $font-family-base: $font-family-sans-serif;
 
 $font-weight-semi-bold: 600;
@@ -13,3 +13,17 @@ $brand-yellow-light: #fffada;
 $brand-yellow-dark: #f5d25f;
 
 $background-gradient: linear-gradient(to bottom, $brand-yellow-light, $brand-yellow-dark);
+
+$social-media-colors: (
+  facebook: #3b5998,
+  twitter: #1da1f2,
+  instagram: #c32aa3,
+  linkedin: #007bb5,
+  soundcloud: #ff5500,
+  xing: #026466,
+  mixcloud: #52aad8,
+  discogs: #f5df2e,
+  apple-music: #c482df,
+  github: #4078c0,
+  wordpress: #d54e21,
+);
