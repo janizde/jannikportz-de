@@ -1,0 +1,81 @@
+
+.vita-more {
+  background-color: transparent;
+  background-image: linear-gradient(to right, transparent 33%, $brand-red 0%);
+  background-position: top;
+  background-size: 20px 2px;
+  background-repeat: repeat-x;
+
+  margin: 1rem 0;
+  padding: 1rem 0;
+  text-align: center;
+  color: $brand-red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color, color 300ms;
+  
+  &:hover {
+    background-color: $brand-red;
+    color: black;
+  }
+  
+  .toggle-icon {
+    display: inline-block;
+    transform: rotateX(0deg);
+    transition: transform 300ms;
+  }
+  
+  &.expanded .toggle-icon {
+    transform: rotateX(180deg) translateY(5px);
+  }
+  
+  .more-label {
+    &.collapsed {
+      display: inline;
+    }
+    
+    &.expanded {
+      display: none;
+    }
+  }
+  
+  &.expanded .more-label {
+    &.collapsed {
+      display: none;
+    }
+    
+    &.expanded {
+      display: inline;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.vita-card {
+  margin: 1rem 0;
+  
+  &-time {
+    font-size: 0.75rem;
+    color: #999;
+    margin-left: -10px;
+  }
+}
+
+.vita-more-heading {
+  display: none;
+}
+
+@media (max-width: map-get($map: $grid-breakpoints, $key: md)) {
+  .vita-more-heading {
+    display: block;
+  }
+}
+
+@media (max-width: map-get($map: $grid-breakpoints, $key: sm)) {
+  .vita-card-time {
+    margin-left: 0;
+  }
+}

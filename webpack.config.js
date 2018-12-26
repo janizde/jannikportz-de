@@ -44,6 +44,10 @@ module.exports = {
   ],
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+      },
       // EJS
       {
         test: /\.ejs$/,
