@@ -169,4 +169,48 @@ main {
     background-color: $brand-red;
     color: black;
   }
+  
+  .toggle-icon {
+    display: inline-block;
+    transform: rotateX(0deg);
+    transition: transform 300ms;
+  }
+  
+  &.expanded .toggle-icon {
+    transform: rotateX(180deg) translateY(5px);
+  }
+  
+  .more-label {
+    &.collapsed {
+      display: inline;
+    }
+    
+    &.expanded {
+      display: none;
+    }
+  }
+  
+  &.expanded .more-label {
+    &.collapsed {
+      display: none;
+    }
+    
+    &.expanded {
+      display: inline;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.vita-card {
+  margin: 1rem 0;
+  
+  &-time {
+    font-size: 0.75rem;
+    color: #999;
+    margin-left: -10px;
+  }
 }
