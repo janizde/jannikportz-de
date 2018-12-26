@@ -33,10 +33,10 @@ module.exports = {
         from: path.join(dirAssets, 'images'),
         to: 'assets/images',
       },
-      {
+      /* {
         from: path.join(dirAssets, 'favicon.ico'),
         to: 'favicon.ico',
-      }
+      }*/
     ]),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "index.ejs"),

@@ -43,6 +43,12 @@ footer {
   padding: 2rem 0;
 }
 
+hr {
+  border: none;
+  border-top: 2px solid #222;
+  margin: 3rem 0;
+}
+
 main {
   @extend .container;
 
@@ -141,5 +147,26 @@ main {
     .handle {
       font-size: 0.75rem;
     }
+  }
+}
+
+.vita-more {
+  background-color: transparent;
+  background-image: linear-gradient(to right, transparent 33%, $brand-red 0%);
+  background-position: top;
+  background-size: 20px 2px;
+  background-repeat: repeat-x;
+
+  margin: 1rem 0;
+  padding: 1rem 0;
+  text-align: center;
+  color: $brand-red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color, color 300ms;
+  
+  &:hover {
+    background-color: $brand-red;
+    color: black;
   }
 }
