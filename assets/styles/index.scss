@@ -43,7 +43,6 @@ header, footer {
 
 header {
   margin: 5rem 1rem;
-  margin-top: calc(50vh - 30px);
 }
 
 footer {
@@ -80,14 +79,4 @@ main {
   header {
     margin-bottom: 2rem;
   }
-}
-
-.blur-layer {
-  background-color: #111111;
-  width: 100%;
-  height: calc(50vh - 50px);
-  position: fixed;
-  z-index: 10;
-  right: 0;
-  bottom: 0;
 }
