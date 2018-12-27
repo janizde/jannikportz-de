@@ -65,12 +65,12 @@
 }
 
 .vita-more-heading {
-  display: none;
+  visibility: hidden;
 }
 
 @media (max-width: map-get($map: $grid-breakpoints, $key: md)) {
   .vita-more-heading {
-    display: block;
+    visibility: visible;
   }
 }
 
