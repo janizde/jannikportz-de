@@ -3,17 +3,21 @@
   display: block;
 }
 
-@mixin make-project-variant($color-base, $background-image, $background-position: center center) {
+@mixin make-project-variant(
+  $color-base,
+  $background-image,
+  $background-position: center center
+) {
   border-top-color: $color-base;
   border-bottom-color: $color-base;
-  
+
   .col-image {
     border-left-color: $color-base;
     border-right-color: $color-base;
     background-image: $background-image;
     background-position: $background-position;
   }
-  
+
   .col-content {
     h3 {
       color: $color-base;
@@ -36,24 +40,25 @@
     border-left: 2px solid transparent;
     border-right: 2px solid transparent;
   }
-  
+
   .col-content {
     @extend .col-12, .col-md-6;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+
     h3 {
       flex: 0;
     }
-    
+
     .description {
       flex: 1;
       margin-bottom: 1rem;
-      
-      dl, dd:last-child {
+
+      dl,
+      dd:last-child {
         margin-bottom: 0;
-      }      
+      }
     }
 
     .project-links {
@@ -61,15 +66,19 @@
       flex: 0;
       justify-self: flex-end;
       margin-bottom: 1rem;
-      
+
       li {
-        @extend .small; 
+        @extend .small;
         margin-top: 0.2rem;
       }
     }
   }
-  
+
   &.wp-opening-hours {
-    @include make-project-variant(map-get($map: $social-media-colors, $key: twitter), url("/assets/images/opening-hours-screenshot.png"), center top);
+    @include make-project-variant(
+      map-get($map: $social-media-colors, $key: twitter),
+      url("/assets/images/opening-hours-screenshot.png"),
+      center top
+    );
   }
 }

@@ -1,4 +1,3 @@
-
 @mixin make-external-profile-button($color-base) {
   border-color: $color-base;
   color: $color-base !important;
@@ -24,11 +23,12 @@
   cursor: pointer;
   margin: 1rem 0;
   font-weight: $font-weight-semi-bold;
-  
-  &, &:hover {
+
+  &,
+  &:hover {
     text-decoration: none;
   }
-  
+
   .handle {
     font-size: 1rem;
     font-weight: $font-weight-base;
@@ -48,7 +48,7 @@
   &:before {
     opacity: 0;
     z-index: -1;
-    content: '';
+    content: "";
     background-image: url("/assets/images/apple-music-gradient.png");
     background-size: 100% 100%;
     position: absolute;
@@ -59,11 +59,11 @@
     transition: opacity 500ms;
     border-radius: 8px;
   }
-  
+
   &:hover::before {
     opacity: 1;
   }
-  
+
   &:hover {
     background-color: transparent;
     color: white !important;
@@ -74,7 +74,7 @@
   .button-external-profile {
     font-size: 1.25rem;
     height: 75px;
-    
+
     .handle {
       font-size: 0.75rem;
     }

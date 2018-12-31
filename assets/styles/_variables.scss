@@ -12,7 +12,11 @@ $brand-gray-light: #8f9da4;
 $brand-yellow-light: #fffada;
 $brand-yellow-dark: #f5d25f;
 
-$background-gradient: linear-gradient(to bottom, $brand-yellow-light, $brand-yellow-dark);
+$background-gradient: linear-gradient(
+  to bottom,
+  $brand-yellow-light,
+  $brand-yellow-dark
+);
 
 $brand-red: #d54e21;
 
@@ -31,5 +35,5 @@ $social-media-colors: (
   apple-music: #c482df,
   github: #4078c0,
   github-pages: #6cc644,
-  wordpress: #d54e21,
+  wordpress: #d54e21
 );
