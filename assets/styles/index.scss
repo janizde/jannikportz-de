@@ -8,6 +8,7 @@
 @import "nav";
 @import "vita";
 @import "profiles";
+@import "projects";
 
 body {
   background-color: #111111;
@@ -46,6 +47,14 @@ h3 {
   margin: 1.5rem 0;
 }
 
+h4 {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-semi-bold;
+}
+
 header, footer {
   flex: 0;
 }
@@ -62,13 +71,10 @@ footer {
 
 hr {
   border: none;
-  border-top: 2px solid #222;
-  margin: 3rem 0;
+  margin: 7rem 0;
 }
 
 main {
-  @extend .container;
-
   flex: 1;
 }
 
