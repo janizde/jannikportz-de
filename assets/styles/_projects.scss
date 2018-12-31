@@ -1,3 +1,17 @@
+$variant-1: (
+  wordpress: #ff8f56,
+  shortcode: #ff5959,
+  generator: #984a59,
+);
+
+$variant-2: (
+  wordpress: #278ea5,
+  shortcode: #db2d43,
+  generator: #e76838,
+);
+
+$project-variant: $variant-2;
+
 .list-projects {
   @extend .list-unstyled;
   display: block;
@@ -66,6 +80,7 @@
 
     h3 {
       flex: 0;
+      line-height: 150%;
     }
 
     .description {
@@ -80,15 +95,15 @@
   }
 
   &.wp-opening-hours {
-    @include make-project-variant(map-get($map: $social-media-colors, $key: twitter));
+    @include make-project-variant(map-get($project-variant, wordpress));
   }
 
   &.opening-hours-shortcode-builder {
-    @include make-project-variant(map-get($map: $social-media-colors, $key: instagram));
+    @include make-project-variant(map-get($project-variant, shortcode));
   }
 
   &.p5-webpack-generator {
-    @include make-project-variant(map-get($map: $social-media-colors, $key: github-pages));
+    @include make-project-variant(map-get($project-variant, generator));
   }
 }
 
@@ -102,6 +117,12 @@
 
 @media (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
   .project-item {
+    margin: 10rem 0;
+    
+    &:first-child {
+      margin-top: 5rem;
+    }
+
     &:nth-child(odd) {
       .col-details {
         order: 0;
