@@ -16,7 +16,7 @@
 
   &:hover {
     background-color: $brand-red;
-    color: black;
+    color: var(--color-background);
   }
 
   .toggle-icon {
@@ -59,7 +59,7 @@
 
   &-time {
     font-size: 0.75rem;
-    color: #999;
+    color: var(--color-type-tertiary);
     margin-left: -10px;
   }
 }

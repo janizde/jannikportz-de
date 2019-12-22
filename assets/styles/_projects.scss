@@ -1,13 +1,13 @@
 $variant-1: (
   wordpress: #ff8f56,
   shortcode: #ff5959,
-  generator: #984a59,
+  generator: #984a59
 );
 
 $variant-2: (
   wordpress: #278ea5,
   shortcode: #db2d43,
-  generator: #e76838,
+  generator: #e76838
 );
 
 $project-variant: $variant-2;
@@ -17,9 +17,7 @@ $project-variant: $variant-2;
   display: block;
 }
 
-@mixin make-project-variant(
-  $color-base,
-) {
+@mixin make-project-variant($color-base) {
   border-top-color: $color-base;
   border-bottom-color: $color-base;
 
@@ -28,7 +26,8 @@ $project-variant: $variant-2;
   }
 
   .col-content {
-    h3, h3 a {
+    h3,
+    h3 a {
       color: $color-base;
     }
   }
@@ -39,7 +38,7 @@ $project-variant: $variant-2;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   display: block;
-  
+
   .project-links {
     @extend .list-unstyled;
     flex: 0;
@@ -49,13 +48,17 @@ $project-variant: $variant-2;
     li {
       @extend .small;
       margin-top: 0.2rem;
+
+      a {
+        color: #fff;
+      }
     }
   }
 
   .col-details {
     @extend .col-12, .col-lg-4;
     background-size: cover;
-    color: white;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +68,7 @@ $project-variant: $variant-2;
 
     dl {
       margin-bottom: -2rem;
-      
+
       dd {
         margin-bottom: 2rem;
       }
@@ -109,7 +112,8 @@ $project-variant: $variant-2;
 
 @media (min-width: map-get($map: $grid-breakpoints, $key: sm)) {
   .project-item {
-    .col-content, .col-details {
+    .col-content,
+    .col-details {
       padding: 2rem;
     }
   }
@@ -118,7 +122,7 @@ $project-variant: $variant-2;
 @media (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
   .project-item {
     margin: 10rem 0;
-    
+
     &:first-child {
       margin-top: 5rem;
     }
@@ -127,7 +131,7 @@ $project-variant: $variant-2;
       .col-details {
         order: 0;
       }
-      
+
       .col-content {
         order: 1;
       }

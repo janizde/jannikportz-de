@@ -10,9 +10,28 @@
 @import "profiles";
 @import "projects";
 
+:root {
+  --color-background: #111;
+  --color-background-footer: #222;
+  --color-type-primary: #fff;
+  --color-type-secondary: #666;
+  --color-type-tertiary: #999;
+}
+
+// The dark theme is considered the default
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: #fcfcfc;
+    --color-background-footer: #ddd;
+    --color-type-primary: #333;
+    --color-type-secondary: #666;
+    --color-type-tertiary: #999;
+  }
+}
+
 body {
-  background-color: #111111;
-  color: #ffffff;
+  background-color: var(--color-background);
+  color: var(--color-type-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,7 +40,7 @@ body {
 }
 
 a[href] {
-  color: #ffffff;
+  color: var(--color-type-primary);
 }
 
 .nowrap {
@@ -29,7 +48,7 @@ a[href] {
 }
 
 .text-gray {
-  color: #999;
+  color: var(--color-type-secondary);
 }
 
 h1 {
@@ -70,7 +89,7 @@ header {
 }
 
 footer {
-  background-color: #222;
+  background-color: var(--color-background-footer);
   text-align: right;
   padding: 2rem 0;
 }
