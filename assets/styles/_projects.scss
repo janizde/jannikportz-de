@@ -1,16 +1,8 @@
-$variant-1: (
-  wordpress: #ff8f56,
-  shortcode: #ff5959,
-  generator: #984a59
-);
-
-$variant-2: (
+$project-variant: (
   wordpress: #278ea5,
   shortcode: #db2d43,
   generator: #e76838
 );
-
-$project-variant: $variant-2;
 
 .list-projects {
   @extend .list-unstyled;
@@ -46,7 +38,7 @@ $project-variant: $variant-2;
     margin-bottom: 1rem;
 
     li {
-      @extend .small;
+      font-size: 80%;
       margin-top: 0.2rem;
 
       a {
