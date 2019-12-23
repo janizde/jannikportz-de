@@ -1,4 +1,4 @@
-# jannikportz.de ![Travis CI build](https://travis-ci.com/janizde/jannikportz-de.svg?branch=master)
+# jannikportz.de 🔥 [![Build Status](https://travis-ci.com/janizde/jannikportz-de.svg?branch=master)](https://travis-ci.com/janizde/jannikportz-de)
 
 Website repository for [jannikportz.de](https://www.jannikportz.de)
 
