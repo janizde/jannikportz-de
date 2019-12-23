@@ -2,7 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const { dirApp, dirNode, dirAssets, IS_DEV } = require("./webpack.util");
+const { dirApp, dirNode, dirAssets } = require("./webpack.util");
 
 /**
  * Webpack Configuration
@@ -21,9 +21,6 @@ module.exports = {
     modules: [dirNode, dirApp, dirAssets]
   },
   plugins: [
-    new webpack.DefinePlugin({
-      IS_DEV: IS_DEV
-    }),
     new webpack.ProvidePlugin({
       // lodash
       '_': 'lodash'
@@ -33,10 +30,6 @@ module.exports = {
         from: path.join(dirAssets, 'images'),
         to: 'assets/images',
       },
-      /* {
-        from: path.join(dirAssets, 'favicon.ico'),
-        to: 'favicon.ico',
-      }*/
     ]),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "index.ejs"),

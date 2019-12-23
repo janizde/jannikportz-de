@@ -1,6 +1,6 @@
 const merge = require("webpack-merge");
 const webpackConfig = require("./webpack.config");
-const { IS_DEV, dirAssets } = require("./webpack.util");
+const { dirAssets } = require("./webpack.util");
 
 module.exports = merge(webpackConfig, {
   devtool: "eval",
@@ -19,14 +19,16 @@ module.exports = merge(webpackConfig, {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: IS_DEV
+              sourceMap: true
             }
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: IS_DEV,
-              includePaths: [dirAssets]
+              sourceMap: true,
+              sassOptions: {
+                includePaths: [dirAssets]
+              },
             }
           }
         ]

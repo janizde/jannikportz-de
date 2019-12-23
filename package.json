@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --host 0.0.0.0 --progress --config webpack.config.dev.js",
-    "build": "webpack -p --progress --config webpack.config.build.js"
+    "build": "(rm -rf dist; exit 0) && webpack -p --progress --config webpack.config.build.js"
   },
   "repository": {
     "type": "git",
@@ -20,23 +20,23 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "babel-loader": "^8.0.4",
-    "clean-webpack-plugin": "^0.1.18",
-    "copy-webpack-plugin": "^4.4.1",
+    "copy-webpack-plugin": "^5.1.1",
     "cross-env": "^5.1.3",
-    "css-loader": "^0.28.9",
+    "css-loader": "^3.4.0",
     "ejs-loader": "^0.3.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.6",
+    "file-loader": "^5.0.2",
     "html-loader": "^0.5.5",
-    "html-webpack-exclude-assets-plugin": "^0.0.5",
-    "html-webpack-plugin": "^2.30.1",
+    "html-webpack-exclude-assets-plugin": "^0.0.7",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.0",
     "prettier": "^1.15.3",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.20.1",
-    "url-loader": "^0.6.2",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^3.1.11",
-    "webpack-merge": "^4.1.1"
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.1",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
   }
 }
