@@ -1,5 +1,4 @@
 const path = require("path");
-const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { dirApp, dirNode, dirAssets } = require("./webpack.util");
@@ -21,10 +20,6 @@ module.exports = {
     modules: [dirNode, dirApp, dirAssets]
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      // lodash
-      '_': 'lodash'
-    }),
     new CopyWebpackPlugin([
       {
         from: path.join(dirAssets, 'images'),
@@ -49,7 +44,7 @@ module.exports = {
       },
       // IMAGES
       {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(jpe?g|png|gif|svg)$/,
         loader: "file-loader",
         options: {
           name: "[path][name].[ext]"
