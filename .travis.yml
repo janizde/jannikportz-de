@@ -5,7 +5,7 @@ node_js:
 install:
   - npm i -g yarn && yarn install
   
-before_script:
+script:
   - yarn run build
 
 deploy:
