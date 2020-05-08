@@ -1,6 +1,7 @@
 @mixin make-external-profile-button($color-base) {
   border-color: $color-base;
   color: $color-base !important;
+  background-color: rgba($color-base, 0.1);
 
   &:hover {
     background-color: $color-base;
@@ -17,15 +18,12 @@
   height: 100px;
   border: 2px solid transparent;
   background-color: transparent;
-  transition: background-color, color 500ms;
   font-size: 1.75rem;
-  border-radius: 10px;
   cursor: pointer;
   margin: 1rem 0;
   font-weight: $font-weight-semi-bold;
 
-  &,
-  &:hover {
+  &:hover .handle {
     text-decoration: none;
   }
 
