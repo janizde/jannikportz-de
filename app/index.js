@@ -13,5 +13,6 @@ window.addEventListener("load", () => {
   button.addEventListener("click", () => {
     elem.classList.toggle("hidden");
     button.classList.toggle("expanded");
+    button.setAttribute("title", button.classList.contains("expanded") ? "View less" : "View more");
   });
 });

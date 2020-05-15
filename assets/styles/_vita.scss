@@ -5,16 +5,22 @@
   background-size: 20px 2px;
   background-repeat: repeat-x;
 
+  width: 100%;
   margin: 1rem 0;
   padding: 1rem 0;
   text-align: center;
   color: $brand-red;
   font-size: 1.5rem;
   font-weight: $font-weight-semi-bold;
+  border: 0;
   cursor: pointer;
   transition: background-color, color 300ms;
 
-  &:hover {
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover, &:focus {
     background-color: $brand-red;
     color: var(--color-background);
   }
