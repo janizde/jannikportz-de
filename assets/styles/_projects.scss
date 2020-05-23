@@ -114,6 +114,10 @@ $project-variant: (
       padding: 2rem;
     }
   }
+
+  .image-code-sample {
+    border-radius: 1rem;
+  }
 }
 
 @media (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
@@ -137,7 +141,44 @@ $project-variant: (
 }
 
 .image-code-sample {
-  width: 100%;
+  width: calc(100% + 30px);
   height: auto;
-  border-radius: 1rem;
+  border: 1px solid #efefef;
+  margin: 0 -15px;
+}
+
+@media not all and (prefers-color-scheme: light) {
+  .embedded-gist .gist {
+    .highlight,
+    .gist-meta,
+    .gist-meta a {
+      background: #111;
+      color: #fff;
+    }
+
+    .gist-file {
+      border-color: #333 #333 #333;
+    }
+
+    .gist-data {
+      border-bottom-color: #333;
+    }
+
+    .blob-num {
+      color: rgba(#fff, 0.75);
+    }
+
+    .pl-smi,
+    .pl-s1,
+    .pl-kos,
+    .blob-code-inner,
+    .pl-s,
+    .pl-en {
+      color: #efefef;
+    }
+
+    .pl-c1 {
+      color: #d0a4ff;
+    }
+  }
 }
