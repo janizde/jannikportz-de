@@ -1,7 +1,8 @@
 $project-variant: (
   wordpress: #278ea5,
   shortcode: #db2d43,
-  generator: #e76838
+  generator: #e76838,
+  classbound: #9267cc
 );
 
 .list-projects {
@@ -100,6 +101,10 @@ $project-variant: (
   &.p5-webpack-generator {
     @include make-project-variant(map-get($project-variant, generator));
   }
+
+  &.class-bound-components {
+    @include make-project-variant(map-get($project-variant, classbound));
+  }
 }
 
 @media (min-width: map-get($map: $grid-breakpoints, $key: sm)) {
@@ -129,4 +134,10 @@ $project-variant: (
       }
     }
   }
+}
+
+.image-code-sample {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
 }
