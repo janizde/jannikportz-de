@@ -152,7 +152,7 @@ $project-variant: (
     .highlight,
     .gist-meta,
     .gist-meta a {
-      background: #111;
+      background-color: #111;
       color: #fff;
     }
 
@@ -161,6 +161,7 @@ $project-variant: (
     }
 
     .gist-data {
+      background-color: #111;
       border-bottom-color: #333;
     }
 
