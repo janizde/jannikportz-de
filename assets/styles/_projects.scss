@@ -2,7 +2,8 @@ $project-variant: (
   wordpress: #278ea5,
   shortcode: #db2d43,
   generator: #e76838,
-  classbound: #9267cc
+  classbound: #9267cc,
+  babelpluginClassbound: #e52574
 );
 
 .list-projects {
@@ -96,6 +97,10 @@ $project-variant: (
 
   &.opening-hours-shortcode-builder {
     @include make-project-variant(map-get($project-variant, shortcode));
+  }
+
+  &.babel-plugin-class-bound-components {
+    @include make-project-variant(map-get($project-variant, babelpluginClassbound));
   }
 
   &.p5-webpack-generator {
