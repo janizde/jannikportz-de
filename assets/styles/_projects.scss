@@ -41,10 +41,14 @@ $project-variant: (
 
     li {
       font-size: 80%;
-      margin-top: 0.2rem;
+      margin: 0.75rem 0;
 
       a {
+        display: block;
         color: #fff;
+        background-color: rgba(#fff, 0.25);
+        padding: 10px 15px;
+        border-radius: 4px;
       }
     }
   }
@@ -56,7 +60,7 @@ $project-variant: (
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     padding-top: 1rem;
     padding-bottom: 1rem;
 
