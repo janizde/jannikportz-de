@@ -1,36 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Jannik Portz – Web Developer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <title>Jannik Portz – Web Developer</title>
-</head>
-
-<body>
-  <%= require('html-loader!./templates/nav.html') %>
-  <header>
-    <h1>
-      jannikportz.de 🔥
-    </h1>
-  </header>
-  <main>
-    <%= require('html-loader!./templates/vita.html') %>
-    <hr />
-    <%= require('html-loader!./templates/projects.html') %>
-    <hr />
-    <%= require('html-loader!./templates/profiles.html') %>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          &copy; 2020 – Jannik Portz
+  <body>
+    <%= require('html-loader!./templates/nav.html') %>
+    <header>
+      <h1>
+        jannikportz.de 🔥
+      </h1>
+    </header>
+    <main>
+      <%= require('html-loader!./templates/vita.html') %>
+      <hr />
+      <%= require('html-loader!./templates/projects.html') %>
+      <hr />
+      <%= require('html-loader!./templates/profiles.html') %>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            &copy; 2021 – Jannik Portz
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <%= require('html-loader!./templates/vcard.html') %>
-</body>
+    </footer>
+    <%= require('html-loader!./templates/vcard.html') %>
+  </body>
 </html>
