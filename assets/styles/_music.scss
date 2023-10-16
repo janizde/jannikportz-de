@@ -1,0 +1,8 @@
+.iframeContainer {
+  border-top: 10px solid var(--color-background);
+  overflow: hidden;
+}
+
+.iframeContainer > iframe {
+  margin-top: -5px;
+}

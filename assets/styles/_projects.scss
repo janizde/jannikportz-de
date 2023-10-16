@@ -24,7 +24,9 @@ $project-variant: (
   .col-content {
     h3,
     h3 a {
-      color: $color-base;
+      @media screen and (prefers-color-scheme: light) {
+        color: $color-base;
+      }
     }
   }
 }
