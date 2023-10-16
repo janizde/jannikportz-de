@@ -3,7 +3,9 @@ $project-variant: (
   shortcode: #db2d43,
   generator: #e76838,
   classbound: #9267cc,
-  babelpluginClassbound: #e52574
+  babelpluginClassbound: #e52574,
+  breakfastRadioSummer: #083d77,
+  breakfastRadioAutumn: #2e4057
 );
 
 .list-projects {
@@ -113,6 +115,14 @@ $project-variant: (
 
   &.class-bound-components {
     @include make-project-variant(map-get($project-variant, classbound));
+  }
+
+  &.breakfast-radio-summer {
+    @include make-project-variant(map-get($project-variant, breakfastRadioSummer));
+  }
+
+  &.breakfast-radio-autumn {
+    @include make-project-variant(map-get($project-variant, breakfastRadioAutumn));
   }
 }
 
