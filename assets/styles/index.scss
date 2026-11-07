@@ -111,7 +111,13 @@ footer {
 
 hr {
   border: none;
-  margin: 7rem 0;
+  margin: 4rem 0;
+  height: 2px;
+  opacity: 1;
+  background-image: linear-gradient(to right, transparent 33%, var(--color-type-primary) 0%);
+  background-position: top;
+  background-size: 20px 2px;
+  background-repeat: repeat-x;
 }
 
 main {

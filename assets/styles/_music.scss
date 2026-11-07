@@ -6,3 +6,7 @@
 .iframeContainer > iframe {
   margin-top: -5px;
 }
+
+.mix-item + .mix-item {
+  margin-top: 3rem;
+}
