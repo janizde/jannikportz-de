@@ -23,3 +23,7 @@ $social-media-colors: (
   github-pages: #6cc644,
   wordpress: #d54e21
 );
+
+// Keep Bootstrap 4 link behaviour (underline on hover only)
+$link-decoration: none;
+$link-hover-decoration: underline;

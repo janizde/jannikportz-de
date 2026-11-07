@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <title>Jannik Portz — Software Engineer in Berlin</title>
+    <script type="module" src="/app/index.js"></script>
   </head>
 
   <body>
@@ -14,9 +15,9 @@
       </h1>
     </header>
     <main>
-      <%= require('html-loader!./templates/vita.html') %>
+      <!-- @include templates/vita.html -->
       <hr />
-      <%= require('html-loader!./templates/profiles.html') %>
+      <!-- @include templates/profiles.html -->
     </main>
     <footer>
       <div class="container">
