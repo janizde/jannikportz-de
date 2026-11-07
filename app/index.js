@@ -3,7 +3,7 @@
  */
 
 // Load application styles
-import "styles/index.scss";
+import "../assets/styles/index.scss";
 
 // Toggle Vita
 window.addEventListener("load", () => {
